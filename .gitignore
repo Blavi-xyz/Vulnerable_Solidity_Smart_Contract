@@ -1,0 +1,109 @@
+# Secrets and local env
+.env
+.env.*
+!.env.example
+!**/.env.example
+*.pem
+*.key
+*.secret
+*.keystore
+mnemonic.txt
+secrets.json
+
+# Local backups
+*.bak
+*.backup
+*.orig
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Next.js / frontend
+.next/
+**/.next/
+out/
+**/out/
+dist/
+**/dist/
+build/
+**/build/
+coverage/
+**/coverage/
+.turbo/
+**/.turbo/
+.vercel/
+**/.vercel/
+
+# TypeScript / lint / test caches
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+.cache/
+**/.cache/
+
+# Foundry
+/out/
+/cache/
+/broadcast/
+/lib/
+/.gas-snapshot
+/.coverage
+/lcov.info
+
+# Solidity / EVM tooling
+artifacts/
+typechain/
+typechain-types/
+hh-cache/
+crytic-export/
+slither.db.json
+
+# Playwright
+.playwright-mcp/
+playwright-report/
+test-results/
+screenshots/
+*.webm
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS and editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+
+# Package manager caches
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Misc generated files
+tmp/
+temp/
+.tmp/
+*.local
+
+.claude
+.playwright-mcp 
+docs/
+AGENTS.md 
+CLAUDE.md
+TASKS.md
+memory.md
+.claude/
+*.bak
