@@ -20,9 +20,7 @@ contract VulnerableVault {
     }
 
     function withdrawAll(address payable recipient) external {
-        // VULNERABILITY IS HERE: tx.origin based auth can be bypassed by a phishing contract.
-        // FIX IS: use msg.sender == owner instead of tx.origin == owner.
-        require(tx.origin == owner, "not owner");
+        require(msg.sender == owner, "not owner");
 
         uint256 amount = address(this).balance;
         (bool sent,) = recipient.call{ value: amount }("");
